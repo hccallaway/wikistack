@@ -13,5 +13,6 @@ module.exports = pages =>
   <ul class="list-unstyled">
     <ul>
       <!-- PLACEHOLDER LIST OF PAGES -->
+      ${pages.map(page => html`<li><a href="/wiki/${page.dataValues.title}">${page.dataValues.title}</a></li>`)}
     </ul>
   </ul>`);

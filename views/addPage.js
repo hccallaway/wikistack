@@ -8,14 +8,14 @@ module.exports = () =>
   <form method="POST" action="/wiki/">
 
   <div class="form-group">
-    <label for="title" class="col-sm-2 control-label">Name</label>
+    <label for="name" class="col-sm-2 control-label">Name</label>
     <div class="col-sm-10">
     <input id="name" name="name" type="text" class="form-control"/>
   </div>
 </div>
 
 <div class="form-group">
-<label for="title" class="col-sm-2 control-label">Email</label>
+<label for="email" class="col-sm-2 control-label">Email</label>
 <div class="col-sm-10">
   <input id="email" name="email" type="text" class="form-control"/>
 </div>
@@ -29,14 +29,14 @@ module.exports = () =>
     </div>
 
     <div class="form-group">
-    <label for="title" class="col-sm-2 control-label">Content</label>
+    <label for="content" class="col-sm-2 control-label">Content</label>
     <div class="col-sm-10">
       <input id="content" name="content" type="text" class="form-control"/>
     </div>
   </div>
 
   <div class="form-group">
-  <label for="title" class="col-sm-2 control-label">Status</label>
+  <label for="status" class="col-sm-2 control-label">Status</label>
   <div class="col-sm-10">
     <input id="status" name="status" type="text" class="form-control"/>
   </div>
