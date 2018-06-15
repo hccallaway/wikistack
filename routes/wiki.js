@@ -13,13 +13,10 @@ router.get('/add', (req, res, next) => {
 });
 
 router.post('/', async (req, res, next) => {
-  const page = new Page({
-    title: req.body.title,
-    content: req.body.content,
-  });
-
   try {
-    await page.save();
+    await Page.create(req.body);
+    // console.log(newPage);
+    res.redirect('/');
   } catch (error) {
     console.error(error);
   }
