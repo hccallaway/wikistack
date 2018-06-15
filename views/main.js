@@ -1,7 +1,8 @@
-const html = require("html-template-tag");
-const layout = require("./layout");
+const html = require('html-template-tag');
+const layout = require('./layout');
 
-module.exports = (pages) => layout(html`
+module.exports = pages =>
+  layout(html`
   <h3>Pages</h3>
   <hr>
   <form method="GET" action="/wiki/search">

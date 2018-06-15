@@ -5,8 +5,8 @@ const app = express();
 
 const layout = require('./views/layout');
 const { db, Page, User } = require('./models');
-const userRoute = require('./routes/user')
-const wikiRoute = require('./routes/wiki')
+const userRoute = require('./routes/user');
+const wikiRoute = require('./routes/wiki');
 
 // const db = new Sequelize('postgres://localhost:5432/wikistack', {
 //     logging: false
@@ -19,12 +19,11 @@ db.authenticate().then(() => {
   console.log('connected to the database');
 });
 
-
 app.use('/user', userRoute);
 app.use('/wiki', wikiRoute);
 
 app.get('/', (req, res, next) => {
-    res.redirect('/wiki')
+  res.redirect('/wiki');
 });
 
 const init = async () => {
